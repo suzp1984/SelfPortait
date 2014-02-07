@@ -1,0 +1,201 @@
+%% start of file `template-zh.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv 主题
+\moderncvstyle{classic}                        % 选项参数是 ‘casual’, ‘classic’, ‘oldstyle’ 和 ’banking’
+\moderncvcolor{blue}                          % 选项参数是 ‘blue’ (默认)、‘orange’、‘green’、‘red’、‘purple’ 和 ‘grey’
+%\nopagenumbers{}                             % 消除注释以取消自动页码生成功能
+
+% 字符编码
+%\usepackage[utf8]{inputenc}                   % 替换你正在使用的编码
+%\usepackage{CJKutf8}
+\usepackage[cm-default]{fontspec} %provide font selecting commands
+\usepackage{xunicode}  % provide unicode character macros
+
+\defaultfontfeatures{Mapping=tex-text}
+
+\usepackage[slantfont, boldfont]{xeCJK}
+\usepackage{xltxtra} % provide some fixes/extras
+%\CJKlanguage{zh-CN}
+\usepackage{xcolor}
+\setCJKmainfont{WenQuanYi Zen Hei}
+\setCJKfamilyfont{song}{WenQuanYi Zen Hei}
+
+% 调整页面出血
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % 如果你希望改变日期栏的宽度
+
+%\usepackage{hyperref}
+
+% 个人信息
+\firstname{苏}
+\familyname{振兴}
+%\title{简历题目 (可选项)}                      % 可选项、如不需要可删除本行
+%\address{街道及门牌号}{邮编及城市}             % 可选项、如不需要可删除本行
+\mobile{+86~15012462201}                         % 可选项、如不需要可删除本行
+%\phone{+2~(345)~678~901}                          % 可选项、如不需要可删除本行
+%\fax{+3~(456)~789~012}                            % 可选项、如不需要可删除本行
+\email{suzp1984@gmail.com}                    % 可选项、如不需要可删除本行
+\homepage{zpcat.blogspot.com}                  % 可选项、如不需要可删除本行
+%\extrainfo{附加信息 (可选项)}                  % 可选项、如不需要可删除本行
+\photo[64pt][0.4pt]{myself-new}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
+%\quote{引言(可选项)}                           % 可选项、如不需要可删除本行
+
+% 显示索引号;仅用于在简历中使用了引言
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% 分类索引
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            内容
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK}{UTF8}{gbsn}                       % 详情参阅CJK文件包
+\maketitle
+
+\section{教育背景}
+\cventry{2007.8-10.7}{硕士}{中科院金属所}{沈阳} {物理化学硕士学位} {} % {\textit{成绩}}{说明}  % 第3到第6编码可留白
+\cventry{2003.8-07.7}{学士}{烟台大学}{烟台} {应用物理学士学位} {} % {\textit{成绩}}{说明}
+
+%\section{毕业论文}
+%\cvitem{题目}{\emph{题目}}
+%\cvitem{导师}{导师}
+%\cvitem{说明}{\small 论文简介}
+
+\section{工作背景}
+%\subsection{专业}
+\cventry{2010.4-12.8}{软件工程师}{深圳鼎智}{}{}{从事Android系统的研发工作 %\newline{}
+% 工作内容:
+% \begin{itemize}
+% \item android编译环境开发与维护;
+% \item WIFI子系统维护;
+% \item Bluetooth子系统维护;
+% \item 传感器子系统开发与维护;
+% \item 客户定制系统的开发工作;
+% \item 工厂测试和自动测试软件开发;
+% \item android app 开发;
+% \end{itemize}
+}
+
+\cventry{2012.8-now}{待业}{}{}{}{}
+
+\section{离职原因}
+
+\cvitem{1.}{新的软件团体缺少工程师的氛围。}
+
+\cvitem{2.}{想从事一些更有意思的工作。}
+
+\cvitem{3.}{想总结一下自己的软件技能。}
+
+\section{2012.8至今的生活}
+\cvitem{1.}{旅游 {\small \href{http://zxsu.tumblr.com/}{\color{blue}{http://zxsu.tumblr.com/}}}}
+
+\cvitem{2.}{读书：文学类若干；软件类-倾向与动态语言学习}
+
+\cvitem{3.}{写代码：代码位置在github -- https://github.com/suzp1984}
+
+\cvitem{4.}{把自己变成emacser}
+
+%\cventry{年 -- 年}{职位}{公司}{城市}{}{说明行1\newline{}说明行2}
+%\subsection{其他}
+%\cventry{年 -- 年}{职位}{公司}{城市}{}{说明}
+
+%\section{语言技能}
+%\cvitemwithcomment{英语}{四级}{}
+%\cvitemwithcomment{语言 3}{水平}{评价}
+
+\section{计算机技能}
+\cvitem{github}{\small \href{https://github.com/suzp1984}{\color{blue}{https://github.com/suzp1984}}}
+\cvitem{blog}{\small \href{http://zpcat.blogspot.com/}{\color{blue}{http://zpcat.blogspot.com/}}}
+
+\section{开源代码}
+\cvitem{\href{https://github.com/suzp1984/tts-mode}{\color{blue}{TTS-mode}}}{\small TTS(Text to speech) mode for emacs.}
+\cvitem{\href{https://github.com/suzp1984/fs-mode}{\color{blue}{fs-mode}}}{\small Linux file system management mode for emacs.}
+\cvitem{\href{https://github.com/suzp1984/pulseaudio-mode}{\color{blue}{pulseaudio-mode}}}{\small Pulseaudio mode for emacs.}
+\cvitem{\href{https://github.com/suzp1984/genesis}{\color{blue}{genesis}}}{\small 一个reactor模型的中间件，插件式设计}
+%\cvitem{C}{\small 工作中主要使用的语言, 对它也最熟悉}
+%\cvitem{java}{\small 开发android工作中主要使用的语言}
+%\cvitem{common lisp}{\small 个人兴趣主要钻研的语言, 使用的是sbcl的实现}
+%\cvitem{python}{\small 兴趣}
+%\cvitem{linux}{\small 使用的操纵系统,个人兴趣喜欢研究它, 本人对程序感兴趣就是从学习使用linux开始的}
+%\cvitem{linux kernel}{\small 略懂}
+%\cvitem{emacs}{\small 主要的开发工具}
+%\cvitem{latex}{\small 正式的文档工具}
+%\cvitem{虚拟机}{\small qemu jvm}
+%\cvitem{加密技术}{\small 个人爱好}
+
+\section{工作的业绩及其职责描述}
+\cvitem{1.}{Android 构建工具的开发, 基本自己独立完成，主要是开发有利于
+客户定制的rom. 主要开发语言Bash Shell, Python. 另外，还用
+Shell脚本做过一个系统烧录工具，shell脚本跑在一个init进程里。}
+
+\cvitem{2.}{Wifi 蓝牙 模块的维护, 基本是维护工作, 熟悉wpa\_supplicant, bluz代码。}
+
+\cvitem{3.}{android传感器系统的中间层开发，同我上司共同完成，主要开发语言C。适配
+的传感器包括重力传感器，磁力传感器，方向传感器，距离传感器和光传感器。另
+外，还负责硬件适配层其它部分的维护工作，包括GPS等}
+
+\cvitem{4.}{客户定制化工具的开发，基本是我独立完成，分为PC机部分和内核
+部分，首先，在PC机根据配置文件生成相应的类似文件系统的块，然
+后，烧到rom里，内核启动后加载并解析想应的配置。}
+
+\cvitem{5.}{工厂测试工具的开发，这部分是我个人最满意的部分，基本都是我独立完成，
+主要是C代码，包括两部分：\newline{}
+   a. 重写展讯的工厂测试代码使其适配客户定制的环境。\newline{}
+   b. 自动测试的Android部分代码。自动测试仪发送测试命令，Android机器
+   根据命令做测试，并响应测试结果。}
+
+\cvitem{6.}{GUI软件测试工具，记录gui事件并能够按照顺序回放事件。开发语言C, 自己独立
+完成。}
+
+%\cvdoubleitem{类别 1}{XXX, YYY, ZZZ}{类别 4}{XXX, YYY, ZZZ}
+%\cvdoubleitem{类别 2}{XXX, YYY, ZZZ}{类别 5}{XXX, YYY, ZZZ}
+%\cvdoubleitem{类别 3}{XXX, YYY, ZZZ}{类别 6}{XXX, YYY, ZZZ}
+
+%\section{个人兴趣}
+%\cvitem{骑车}{\small 喜欢骑车旅行}
+%\cvitem{爱好 2}{\small 说明}
+%\cvitem{爱好 3}{\small 说明}
+
+%\section{其他 1}
+%\cvlistitem{项目 1}
+%\cvlistitem{项目 2}
+%\cvlistitem{项目 3}
+
+\renewcommand{\listitemsymbol}{-}             % 改变列表符号
+
+%\section{其他 2}
+%\cvlistdoubleitem{项目 1}{项目 4}
+%\cvlistdoubleitem{项目 2}{项目 5\cite{book1}}
+%\cvlistdoubleitem{项目 3}{}
+
+% 来自BibTeX文件但不使用multibib包的出版物
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% BibTeX的数字标签
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                    % 'publications' 是BibTeX文件的文件名
+
+% 来自BibTeX文件并使用multibib包的出版物
+%\section{出版物}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}               % 'publications' 是BibTeX文件的文件名
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}               % 'publications' 是BibTeX文件的文件名
+
+%\clearpage\end{CJK}
+\end{document}
+
+
+%% 文件结尾 `template-zh.tex'.
