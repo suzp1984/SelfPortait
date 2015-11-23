@@ -529,3 +529,7 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
     color: #fff;
     cursor: default;
 }
+
+.blackfont {
+    color: #black;
+}
