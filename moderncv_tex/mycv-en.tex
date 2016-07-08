@@ -74,10 +74,11 @@
 
 \section{Working Experience}
 %\subsection{专业}
-\cventry{2014.5-16.3}{Software Engineer}{Iboxpay Shenzhen}{}{}{Android app developer %\newline{}
+\cventry{2014.5-16.4}{Software Engineer}{Iboxpay Shenzhen}{}{}{Android app developer %\newline{}
 }
-
-\cventry{2010.4-14.4}{Software Engineer}{Topwise Shenzhen}{}{}{As a System engineer of Android %\newline{}
+\cventry{2013.9-14.4}{Software Engineer}{Topwise3g Shenzhen}{}{}{Android System Developer}
+\cventry{2012.2-12.8}{Software Engineer}{Topwise Shenzhen}{}{}{Android System Developer}
+\cventry{2010.4-12.1}{Software Engineer}{Topwise3g Shenzhen}{}{}{As a System engineer of Android %\newline{}
 % 工作内容:
 % \begin{itemize}
 % \item android编译环境开发与维护;
@@ -102,7 +103,7 @@
 \section{Programming Skills}
 \cvitem{github}{\small \href{https://github.com/suzp1984}{\color{blue}{https://github.com/suzp1984}}}
 \cvitem{blog}{\small \href{http://zpcat.blogspot.com/}{\color{blue}{http://zpcat.blogspot.com/}}}
-\cvitem{Languages}{\small C, Emacs Lisp, Python, Java, javascript, node.js}
+\cvitem{Languages}{\small C, Emacs Lisp, Python, Java, javascript, node.js, \LaTeX{}}
 \cvitem{Operation System} {Linux(expert), Mac OS X(Daily usage)}
 %\cvitem{Networking programming} {Twisted, node.js}
 %\cvitem{DataBase programming} {}
@@ -110,29 +111,69 @@
 \section{OpenSource codes}
 \cvitem{\href{https://github.com/suzp1984/Light_BLE}{\color{blue}{Light-BLE}}}{\small BLE(Bluetooth Low Energy) Device debug tool for Android.}
 \cvitem{\href{https://github.com/suzp1984/jbig-android}{\color{blue}{jbig-android}}}{\small jbig single-color space picture codec for Android.}
-\cvitem{\href{https://github.com/suzp1984/TLSDemo}{\color{blue}{TLSDemo}}}{\small TLSDemo is an android app sample, which illustrate how to do https request both in self-signed certificate and two-way SSL client-side verfication.}
-\cvitem{\href{https://github.com/suzp1984/tts-mode}{\color{blue}{TTS-mode}}}{\small TTS(Text to speech) mode for emacs.}
-\cvitem{\href{https://github.com/suzp1984/fs-mode}{\color{blue}{fs-mode}}}{\small Linux file system management mode for emacs.}
-\cvitem{\href{https://github.com/suzp1984/pulseaudio-mode}{\color{blue}{pulseaudio-mode}}}{\small Pulseaudio mode for emacs.}
-\cvitem{\href{https://github.com/suzp1984/genesis}{\color{blue}{genesis}}}{\small a plugin desgined middle ware, implemented the reactor module}
-
-%\cvitem{C}{\small 工作中主要使用的语言, 对它也最熟悉}
-%\cvitem{java}{\small 开发android工作中主要使用的语言}
-%\cvitem{common lisp}{\small 个人兴趣主要钻研的语言, 使用的是sbcl的实现}
-%\cvitem{python}{\small 兴趣}
-%\cvitem{linux}{\small 使用的操纵系统,个人兴趣喜欢研究它, 本人对程序感兴趣就是从学习使用linux开始的}
-%\cvitem{linux kernel}{\small 略懂}
-%\cvitem{emacs}{\small 主要的开发工具}
-%\cvitem{latex}{\small 正式的文档工具}
-%\cvitem{虚拟机}{\small qemu jvm}
-%\cvitem{加密技术}{\small 个人爱好}
 
 \section{Projects experience}
-\cvitem{1.}{Virtualization interest, xen/kvm, docker, vagrant}
-\cvitem{2.}{Android App development}
-\cvitem{3.}{Bluetooth v4.0 Low Energy host Stack development， expert of bluedroid, bluez stack.}
-\cvitem{4.}{Android System developement}
-\cvitem{5.}{Web front-end framework: bootstrap and polymer; and JS MVC framework: angularJs，reactJs.}
+\subsection{IBoxPay's CashBox Android App Project}
+\cventry{2014.5-15.4}{Android App Developer}{IBoxPay Co. Ltd}{ShenZhen}{}{Refactor and Developer the former CashBox App project.\newline{}%
+Description:%
+\begin{itemize}
+\item CashBox App is IboxPay's core project, which consists of the mobile client side app, the backend side trading system and an intelligent terminal hardware. This is what we called mobile POS, a box hardware must be connected to the mobile side CashBox app, then swipe your bank card in that little portable hardware, then you can trading with the merchants.
+\item The intelligent terminals can be classified by its connection types, there are Audio jack, Bluetooth Classic, Bluetooth Low Energy and Uart serial port.
+\end{itemize}
+Achievement:%
+\begin{itemize}
+\item Refactor the code according to the Object-Oriented Principal, decoupled the code by introduced an isolated module which can be reused in another projects.
+\item wrote the software design document, make the development process sustainable and readable.
+\item make the code reusable in another project by introduce a Connection interface, when the new terminal device appears with new type of communication type, just to rewrite the Connection interface, then the whole module can be reusble.
+\end{itemize}}
+\cvitem{}{}
+\subsection{Jobs at Software Architecture Team of IBoxPay}
+\cventry{2015.7-16.3}{Software Developer}{IBoxPay Co. Ltd}{ShenZhen}{}{%
+Description:%
+\begin{itemize}
+\item Android App Architecture, promote MVP.
+\item Git and Gitlab Training.
+\item Apache and Nginx journal report analysis.
+\item Nginx Lua module develop(OpenResty).
+\end{itemize}
+}
+\cvitem{}{}
+\subsection{Bluetooth Low Energy Project}
+\cventry{2013.10-14.3}{Software Developer}{Topwise3g Co. Ltd}{Shenzhen}{}{%
+Description:%
+\begin{itemize}
+\item Reseach and analysis Bluetooth Low Energy application at Broadcom's BLE board.
+\end{itemize}
+Architecture:%
+\begin{itemize}
+\item Open Sourced \href{https://github.com/suzp1984/Light_BLE}{\color{blue}{Light-BLE}} project, which can be used to debug and analysis the peripheral BLE device during development.
+\end{itemize}
+}
+
+\cvitem{}{}
+
+
+\subsection{Factory autotest toolkit for SpreadTrum's Android platform}
+\cventry{2012.5-12.7}{Software Developer}{Topwise Co. Ltd}{Shenzhen}{}{%
+Description:%
+\begin{itemize}
+\item The factory auto running test toolkit is running in an autotest machine which test the newly produced PCB board.
+\end{itemize}
+Architecture:%
+\begin{itemize}
+\item check out the faulty PCB board at the early stage in the factory, then promote the rate of qualified PCB board out of the factory.
+\end{itemize}
+}
+
+\cvitem{}{}
+\subsection{Android System Developer}
+\cventry{2010.5-12.8}{Software Developer}{Topwise3g \& Topwise Co. Ltd}{Shenzhen}{}{%
+Description:%
+\begin{itemize}
+\item Android framework and System Developer from version 1.6 to 4.3, My duties include integration Makefile development and HAL layer developer.
+\end{itemize}
+}
+
 %\cvdoubleitem{类别 1}{XXX, YYY, ZZZ}{类别 4}{XXX, YYY, ZZZ}
 %\cvdoubleitem{类别 2}{XXX, YYY, ZZZ}{类别 5}{XXX, YYY, ZZZ}
 %\cvdoubleitem{类别 3}{XXX, YYY, ZZZ}{类别 6}{XXX, YYY, ZZZ}
