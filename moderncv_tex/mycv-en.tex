@@ -64,8 +64,8 @@
 \maketitle
 
 \section{Educational Background}
-\cventry{2007.8-10.7}{Master}{Institute of Metal Research, Chinese Academy of Sciences}{Shen Yang} {Physics} {} % {\textit{成绩}}{说明}  % 第3到第6编码可留白
-\cventry{2003.8-07.7}{Bachelor}{YanTai university}{YanTai} {Physics} {} % {\textit{成绩}}{说明}
+\cventry{2007.9-10.7}{Master}{Institute of Metal Research, Chinese Academy of Sciences}{Shen Yang} {Chemical Physics} {} % {\textit{成绩}}{说明}  % 第3到第6编码可留白
+\cventry{2003.9-07.7}{Bachelor}{YanTai university}{YanTai} {Applied Physics} {} % {\textit{成绩}}{说明}
 
 %\section{毕业论文}
 %\cvitem{题目}{\emph{题目}}
@@ -74,39 +74,39 @@
 
 \section{Working Experience}
 %\subsection{专业}
-\cventry{2014.5-16.4}{Software Engineer}{Iboxpay Shenzhen}{}{}{Android app developer %\newline{}
+\cventry{2014.4-16.4}{Software Engineer}{Iboxpay Shenzhen}{}{}{%
 }
-\cventry{2013.9-14.4}{Software Engineer}{Topwise3g Shenzhen}{}{}{Android System Developer}
-\cventry{2012.2-12.8}{Software Engineer}{Topwise Shenzhen}{}{}{Android System Developer}
-\cventry{2010.4-12.1}{Software Engineer}{Topwise3g Shenzhen}{}{}{As a System engineer of Android %\newline{}
-% 工作内容:
-% \begin{itemize}
-% \item android编译环境开发与维护;
-% \item WIFI子系统维护;
-% \item Bluetooth子系统维护;
-% \item 传感器子系统开发;
-% \item 客户定制系统的开发工作;
-% \item 工厂测试和自动测试软件开发;
-% \item android app 开发;
-% \item Bluetooth BLE 协议开发
-% \end{itemize}
+\cvitem{Duty:}{%
+\begin{itemize}
+\item {\small \emph {Android app engineer}}
+\item {\small \emph {Software Engineer at Architecture Team}}
+\end{itemize}
 }
-
-%\cventry{年 -- 年}{职位}{公司}{城市}{}{说明行1\newline{}说明行2}
-%\subsection{其他}
-%\cventry{年 -- 年}{职位}{公司}{城市}{}{说明}
-
-%\section{语言技能}
-%\cvitemwithcomment{英语}{四级}{}
-%\cvitemwithcomment{语言 3}{水平}{评价}
+\cventry{2013.9-14.4}{Software Engineer}{Topwise3g Shenzhen}{}{}{}
+\cvitem{Duty:}{%
+\begin{itemize}
+\item {\small \emph {Bluetooth Low Energy Engineer}}
+\item {\small \emph {Android framework engineer}}
+\end{itemize}
+}
+\cventry{2012.2-12.8}{Software Engineer}{Topwise Shenzhen}{}{}{%
+}
+\cvitem{Duty:}{%
+\begin{itemize}
+\item {\small \emph {Android framework engineer}}
+\end{itemize}}
+\cventry{2010.4-12.1}{Software Engineer}{Topwise3g Shenzhen}{}{}{}
+\cvitem{Duty:}{%
+\begin{itemize}
+\item {\small \emph {Android framework engineer}}
+\end{itemize}} %\newline{}
 
 \section{Programming Skills}
 \cvitem{github}{\small \href{https://github.com/suzp1984}{\color{blue}{https://github.com/suzp1984}}}
 \cvitem{blog}{\small \href{http://zpcat.blogspot.com/}{\color{blue}{http://zpcat.blogspot.com/}}}
-\cvitem{Languages}{\small C, Emacs Lisp, Python, Java, javascript, node.js, \LaTeX{}}
+\cvitem{Languages}{\small C, Emacs Lisp, Python, Java, Javascript, Shell, \LaTeX{}}
 \cvitem{Operation System} {Linux(expert), Mac OS X(Daily usage)}
-%\cvitem{Networking programming} {Twisted, node.js}
-%\cvitem{DataBase programming} {}
+
 
 \section{OpenSource codes}
 \cvitem{\href{https://github.com/suzp1984/Light_BLE}{\color{blue}{Light-BLE}}}{\small BLE(Bluetooth Low Energy) Device debug tool for Android.}
@@ -114,65 +114,78 @@
 
 \section{Projects experience}
 \subsection{IBoxPay's CashBox Android App Project}
-\cventry{2014.5-15.4}{Android App Developer}{IBoxPay Co. Ltd}{ShenZhen}{}{Refactor and Developer the former CashBox App project.\newline{}%
-Description:%
+\cventry{2014.7-15.5}{Android App Engineer}{IBoxPay Co. Ltd}{ShenZhen}{}{%
+redesign and refactor the CashBox App project.\newline{}%
+}
+\cvitem{Description:}{%
 \begin{itemize}
-\item CashBox App is IboxPay's core project, which consists of the mobile client side app, the backend side trading system and an intelligent terminal hardware. This is what we called mobile POS, a box hardware must be connected to the mobile side CashBox app, then swipe your bank card in that little portable hardware, then you can trading with the merchants.
-\item The intelligent terminals can be classified by its connection types, there are Audio jack, Bluetooth Classic, Bluetooth Low Energy and Uart serial port.
+\item CashBox App is IboxPay's core project, which consists of the mobile client side app, the backend side trading system, and an intelligent terminal hardware. This is what we called the mobile POS, a box hardware must be connected to the mobile side CashBox app, which acts as a middleware between the terminal box and the backend trading system. The customer swipes his bank card in that little portable hardware, then he can pay the bill to the merchants.
+\item The intelligent terminals can be classified into its connection channel types, there are at least three types of channels as Audio jack, Bluetooth Classic, Bluetooth Low Energy and UART serial port.
 \end{itemize}
-Achievement:%
+}
+
+\cvitem{Achievement:}{%
 \begin{itemize}
-\item Refactor the code according to the Object-Oriented Principal, decoupled the code by introduced an isolated module which can be reused in another projects.
-\item wrote the software design document, make the development process sustainable and readable.
-\item make the code reusable in another project by introduce a Connection interface, when the new terminal device appears with new type of communication type, just to rewrite the Connection interface, then the whole module can be reusble.
+\item I rewrote the code according to the Object-Oriented Principal, decoupled the code by introduced an isolated android module project which can be reused in another project.
+\item I make the development process sustainable and the code is readable by wrote the software design document, wrote necessary unit-test and also maintenance a coding style document.
+\item The highlighted part of that code is the hardware connection channel part,  I  introduced a Connection interface, all the connection types, including Audio Jack, Bluetooth was just an implementation of that interface, then, when another project works on a new terminal with UART custom connection channel, what it did is just implement a new Connection interface.
+\item I porting the JBIG codec to Java environment by using the JNI method. JBIG codec is an efficient lossless compression algorithm for single color depth space picture.
 \end{itemize}}
 \cvitem{}{}
+
 \subsection{Jobs at Software Architecture Team of IBoxPay}
 \cventry{2015.7-16.3}{Software Developer}{IBoxPay Co. Ltd}{ShenZhen}{}{%
-Description:%
+}
+\cvitem{Description:}{%
 \begin{itemize}
-\item Android App Architecture, promote MVP.
+\item Android App Architecture research.
 \item Git and Gitlab Training.
 \item Apache and Nginx journal report analysis.
 \item Nginx Lua module develop(OpenResty).
 \end{itemize}
 }
+\cvitem{Achievement:}{%
+\begin{itemize}
+\item Abandon the outdated centralized version control system, SVN, use the advanced distributed version control system Git, the company also start to use the popular on-line coding review and authority control web app, Gitlab.
+\end{itemize}
+}
+
 \cvitem{}{}
 \subsection{Bluetooth Low Energy Project}
 \cventry{2013.10-14.3}{Software Developer}{Topwise3g Co. Ltd}{Shenzhen}{}{%
-Description:%
+}
+\cvitem{Description:}{%
 \begin{itemize}
-\item Reseach and analysis Bluetooth Low Energy application at Broadcom's BLE board.
-\end{itemize}
-Architecture:%
+\item Research and analysis Bluetooth Low Energy application at Broadcom's BLE board.
+\end{itemize}}
+\cvitem{Achievement:}{%
 \begin{itemize}
 \item Open Sourced \href{https://github.com/suzp1984/Light_BLE}{\color{blue}{Light-BLE}} project, which can be used to debug and analysis the peripheral BLE device during development.
 \end{itemize}
 }
-
 \cvitem{}{}
-
 
 \subsection{Factory autotest toolkit for SpreadTrum's Android platform}
 \cventry{2012.5-12.7}{Software Developer}{Topwise Co. Ltd}{Shenzhen}{}{%
-Description:%
+}
+\cvitem{Description:}{%
 \begin{itemize}
-\item The factory auto running test toolkit is running in an autotest machine which test the newly produced PCB board.
+\item The factory auto running test toolkit is running in an autotest machine which checks the newly produced PCB board.
 \end{itemize}
-Architecture:%
+}
+\cvitem{Achievement:}{%
 \begin{itemize}
 \item check out the faulty PCB board at the early stage in the factory, then promote the rate of qualified PCB board out of the factory.
 \end{itemize}
 }
-
 \cvitem{}{}
-\subsection{Android System Developer}
-\cventry{2010.5-12.8}{Software Developer}{Topwise3g \& Topwise Co. Ltd}{Shenzhen}{}{%
-Description:%
+
+\subsection{Android Framework Development}
+\cventry{2010.5-12.8}{Software Developer}{Topwise3g \& Topwise Co. Ltd}{Shenzhen}{}{}
+\cvitem{Description:}{%
 \begin{itemize}
-\item Android framework and System Developer from version 1.6 to 4.3, My duties include integration Makefile development and HAL layer developer.
-\end{itemize}
-}
+\item Android framework and System Developer from version 1.6 to 4.3, My duties include integration Makefile development and HAL layer development.
+\end{itemize}}
 
 %\cvdoubleitem{类别 1}{XXX, YYY, ZZZ}{类别 4}{XXX, YYY, ZZZ}
 %\cvdoubleitem{类别 2}{XXX, YYY, ZZZ}{类别 5}{XXX, YYY, ZZZ}
