@@ -158,44 +158,47 @@
 }
 \cvitem{项目描述:}{%
 \begin{itemize}
-\item CashBox App is IboxPay's core project, which consists of the mobile client side app, the backend side trading system, and an intelligent terminal hardware. This is what we called the mobile POS, a box hardware must be connected to the mobile side CashBox app, which acts as a middleware between the terminal box and the backend trading system. The customer swipes his bank card in that little portable hardware, then he can pay the bill to the merchants.
-\item The intelligent terminals can be classified into its connection channel types, there are at least three types of channels such as Audio jack, Bluetooth Classic, Bluetooth Low Energy and UART serial port.
+\item 钱盒作为盒子支付的核心业务，本质是一个移动端的POS收款机器，它由手机端的应用，后台交易系统和智能终端设备盒子组成。首先，终端盒子要通过音频口或者蓝牙的方式连接到手机端，客户通过在盒子端刷银行卡来同商户完成一笔交易。
+\item 智能盒子硬件部分可通过同手机通讯方式的不同分为音频口通讯，蓝牙通讯和UART串口通讯的方式，又根据支持的银行卡类型的不同分为磁条卡和IC卡支付。
 \end{itemize}
 }
 
 \cvitem{项目成绩:}{%
 \begin{itemize}
-\item I rewrote the code according to the Object-Oriented Principal, decoupled the code by introduced an isolated android module project which can be reused in another project.
-\item I make the development process sustainable and the code is readable by wrote the software design document, wrote necessary unit-test and also maintenance a coding style document.
-\item The highlighted part of that code is the hardware connection channel part,  I  introduced a Connection interface, all the connection types, including Audio Jack and Bluetooth, were just implementations of that interface, then, when another project works on a new terminal with UART custom connection channel, what it did is just implement a new Connection interface.
-\item I porting the JBIG codec to Java environment by using the JNI method. JBIG codec is an efficient lossless compression algorithm for single color depth space picture.
+\item 将主要的业务对象独立到单独的安卓模块中，并能在其它的项目中重用此模块。
+\item 按照传统的软件设计流程：添加单元测试，写软件设计文档，并维护一份软件编程规范。保证软件开发可持续和可维护。
+\item 在对象的设计中比较有价值的是抽象出同硬件的通信类型的接口，使得音频和蓝牙两种通信方案相互独立，并能够在以后的项目中引入串口通讯时，可以方便的重用所有的代码。
+\item 使用JNI移植jbig图片编码技术到java平台, JBIG是一种单颜色空间的无损压缩格式，常用于能提供压力触摸笔签名的银联POS机。
 \end{itemize}}
 \cvitem{}{}
 
 \subsection{盒子支付架构组工作}
-\cventry{2015.7-16.3}{Software Developer}{IBoxPay Co., Ltd.}{ShenZhen}{}{%
+\cventry{2015.7-16.3}{软件工程师}{深圳盒子支付有限公司}{深圳}{}{%
 }
 \cvitem{项目描述:}{%
 \begin{itemize}
-\item Android App Architecture research.
-\item Git and Gitlab Training.
-\item Apache and Nginx journal report analysis.
-\item Nginx Lua module develop(OpenResty).
+\item Android应用架构研究
+\item Git/Gitlab 技术培训
+\item Apache/Nginx 日志分析，生成静态报告
+\item OpenResty 应用开发
+\item Docker以及自动配置系统方案研究
 \end{itemize}
 }
 \cvitem{项目成绩:}{%
 \begin{itemize}
-\item Abandon the outdated centralized version control system, SVN, use the advanced distributed version control system Git, the company also start to use the popular on-line coding review and authority control web app, Gitlab.
+\item 在公司推广了gitlab和git的使用，抛弃了以往的svn版本管理工具。
+\item android MVP/MVC 架构实践
+\item 检查Servlet session是否合法的OpenResty应用
 \end{itemize}
 }
 
 \cvitem{}{}
 \subsection{蓝牙低功耗可穿戴设备项目}
-\cventry{2013.10-14.3}{Software Developer}{Topwise3g Co., Ltd.}{Shenzhen}{}{%
+\cventry{2013.10-14.3}{软件工程师}{深圳市鼎智时代通讯技术有限公司}{深圳}{}{%
 }
 \cvitem{项目描述:}{%
 \begin{itemize}
-\item Research and analysis Bluetooth Low Energy application at Broadcom's BLE board.
+\item 研究BroadCom 的BLE方案在可穿戴领域的应用
 \end{itemize}}
 \cvitem{项目成绩:}{%
 \begin{itemize}
@@ -205,25 +208,27 @@
 \cvitem{}{}
 
 \subsection{展讯安卓平台工厂自动测试工具}
-\cventry{2012.5-12.7}{Software Developer}{Topwise Co., Ltd.}{Shenzhen}{}{%
+\cventry{2012.5-12.7}{软件工程师}{深圳鼎智通讯有限公司}{深圳}{}{%
 }
 \cvitem{项目描述:}{%
 \begin{itemize}
-\item The factory auto running test toolkit is running in an autotest machine which checks the newly produced PCB board.
+\item 展讯平台的pcb板出厂测试模块，利用安卓系统的C层的代码，将所有外设都在一个出厂夹具中自动跑一遍，然后测试结果会显示在夹具的LCD屏上。
 \end{itemize}
 }
 \cvitem{项目成绩:}{%
 \begin{itemize}
-\item check out the faulty PCB board at the early stage in the factory, then promote the rate of qualified PCB board out of the factory.
+\item 方便工厂在贴片完成之后就能迅速将有问题的pcb板检查出来，提高手机的良品率。
 \end{itemize}
 }
 \cvitem{}{}
 
 \subsection{安卓系统开发}
-\cventry{2010.5-12.8}{Software Developer}{Topwise3g \& Topwise Co., Ltd.}{Shenzhen}{}{}
+\cventry{2010.5-12.8}{软件工程师}{Topwise3g \& Topwise Co., Ltd.}{深圳}{}{}
 \cvitem{项目描述:}{%
 \begin{itemize}
-\item Android framework and System Developer from version 1.6 to 4.3, My duties include integration Makefile development and HAL layer development.
+\item 从android1.6开始到4.3，在鼎智做android 方案开发，经历过Marvell, 展讯，高通，全志平台的方案。
+\item 负责makefile, HAL硬件适配层的开发。
+\item 负责蓝牙，wifi模块调试。
 \end{itemize}}
 
 
