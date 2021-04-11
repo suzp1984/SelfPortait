@@ -17,7 +17,7 @@
 %\usepackage[utf8]{inputenc}                   % 替换你正在使用的编码
 %\usepackage{CJKutf8}
 \usepackage[cm-default]{fontspec} %provide font selecting commands
-\usepackage{xunicode}  % provide unicode character macros
+% \usepackage{xunicode}  % provide unicode character macros
 
 \defaultfontfeatures{Mapping=tex-text}
 
@@ -25,8 +25,8 @@
 \usepackage{xltxtra} % provide some fixes/extras
 %\CJKlanguage{zh-CN}
 \usepackage{xcolor}
-\setCJKmainfont{WenQuanYi Zen Hei}
-\setCJKfamilyfont{song}{WenQuanYi Zen Hei}
+% \setCJKmainfont{WenQuanYi Zen Hei}
+% \setCJKfamilyfont{song}{WenQuanYi Zen Hei}
 
 % 调整页面出血
 \usepackage[scale=0.75]{geometry}
@@ -73,8 +73,9 @@
 %\cvitem{说明}{\small 论文简介}
 
 \section{工作背景}
-%\subsection{专业}
-\cventry{2017.11-now}{厦门铃盛软件}{移动开发部}{厦门}{}{%
+% \subsection{专业}
+\cventry{2020.11-now}{待业}{}{}{}{}
+\cventry{2017.11-20.10}{厦门铃盛软件}{移动开发部}{厦门}{}{%
 }
 \cvitem{职位}{%
 \begin{itemize}
@@ -161,13 +162,26 @@
 \vspace{5mm}
 \cvitem{}{%
   \begin{itemize}
-  \item 期望从事有挑战性的工作，并能够不断提升自己成为一个出色的工程师；
+  \item 期望从事OpenGL, WebGL, Metal, Vulkan等GPU图形编程相关的工作；
+  \item 期望从事Rust编程相关的项目；
   \item 期望能够参与初创期的项目；
-  \item 期望能跟优秀的工程师工作；
 \end{itemize}
 }
 
 \section{项目经历}
+\vspace{5mm}
+\subsection{Apple Metal 开发}
+\vspace{3mm}
+\cventry{2021.2-now}{个人项目}{}{}{}{%
+Metal  
+}
+\vspace{-2mm}
+\cvitem{描述:}{%
+\begin{itemize}
+\item 学习Metal API，并实现\href{https://learnopengl.com/}{\color{blue}LearnOpenGL}中的渲染示例。项目地址：\href{https://github.com/suzp1984/LearnMetal}{\color{blue}LearnMetal}，用Metal实现了：Phong光照模型，3D Model加载，离线渲染，Deferred Shading, PBR等渲染技术。
+\item 修复和重构\href{https://github.com/suzp1984/GPUImage3}{\color{blue}GPUImage3}，\href{https://github.com/BradLarson/GPUImage3}{\color{blue}GPUimage3}是用Metal实现的ios/Mac平台的视频和图片效果处理库。 
+\end{itemize}
+}
 \vspace{5mm}
 \subsection{视频会议项目}
 \vspace{3mm}
